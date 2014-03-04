@@ -3,33 +3,30 @@
 class Calculator
 {
 	protected $result = null;
-	protected $operands = [];
-	protected $operation;
-
+	
 	public function getResult()
 	{
 		return $this->result;
 	}
 
-	public function setOperands()
-	{
-		$this->operands = func_get_args();
-	}
+	// public function add()
+	// {
+	// 	foreach (func_get_args() as $num)
+	// 	{
+	// 		if (!is_numeric($num))
+	// 			throw new InvalidArgumentException;
 
-	public function setOperation(Operation $operation)
-	{
-		$this->operation = $operation;
-	}
+	// 		$this->result += $num;
+	// 	}
+	// }
 
-	public function calculate()
-	{
-		foreach ($this->operands as $num)
-		{
-			if (!is_numeric($num))
-				throw new InvalidArgumentException;
+	// public function substract()
+	// {
+	// 	foreach (func_get_args() as $num)
+	// 	{
+	// 		if (!is_numeric($num))
+	// 			throw new InvalidArgumentException;
 
-			$this->result = $this->operation->run($num, $this->result);
-		}
-		return $this->result;
-	}
+	// 		$this->result -= $num;
+	// 	}
 }
