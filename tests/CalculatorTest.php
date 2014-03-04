@@ -3,6 +3,9 @@ use \Mockery as m;
 
 class CalculatorTest extends PHPUnit_Framework_TestCase
 {
+	/**
+     * Set up the test by calling the class we want to test
+     */
 	public function setUp()
 	{
 		$this->calc = new Calculator;
