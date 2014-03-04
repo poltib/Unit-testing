@@ -29,4 +29,5 @@ class Calculator
 
 			$this->result -= $num;
 		}
+	}
 }
