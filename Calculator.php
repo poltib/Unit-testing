@@ -1,5 +1,7 @@
 <?php
 
+
+//final calculator
 class Calculator
 {
 	protected $result = null;
