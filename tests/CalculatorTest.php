@@ -12,11 +12,6 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 		$this->multiplicationMock = m::mock('Multiplication');
 	}
 
-	// public function tearDown()
-	// {
-	// 	m::close();
-	// }
-
 	public function testResultDefaultToNull()
 	{
 		$this->assertNull($this->calc->getResult());
