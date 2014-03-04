@@ -12,4 +12,8 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 	{
 		$this->assertNull($this->calc->getResult());
 	}
+
+	// test for addition
+
+	// test for substraction
 }

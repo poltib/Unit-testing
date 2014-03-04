@@ -9,6 +9,10 @@ class Calculator
 		return $this->result;
 	}
 
+	/**
+	* Nothing yet we begin by the tests
+	*/
+
 	//function add
 
 	//function substract
