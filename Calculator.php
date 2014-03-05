@@ -51,12 +51,20 @@ class Calculator
 		$this->operation = $operation;
 	}
 
+	/**
+	* This is the core function.
+	* It loop throught the operands.
+	* Foreach operands it checks if it's numeric then call the run method of the 
+	* operation class. 
+	* After the loop we return the final result.
+	*/
 	public function calculate()
 	{
 		foreach ($this->operands as $num)
 		{
-			if (!is_numeric($num))
+			if (!is_numeric($num)){
 				throw new InvalidArgumentException;
+			}
 
 			$this->result = $this->operation->run($num, $this->result);
 		}

@@ -3,6 +3,17 @@ use \Mockery as m;
 
 class CalculatorTest extends PHPUnit_Framework_TestCase
 {
+	/**
+	* In this test file we run our tests in total isolation. To perform that we mock
+	* every external classes called (these classes have their own test).
+	*
+	* eg: Multiplication.php have tests in MultiplicationTest.php and here we mock
+	* Multiplication to stay isolated.
+	*
+	* Like this if we have a failed test we can find exactly where the problem is.
+	*/
+
+
 	public function setUp()
 	{
 		$this->calc = new Calculator;
