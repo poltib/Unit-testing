@@ -15,4 +15,11 @@ class MultiplicationTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals(30, $result);
 	}
 
+	public function testReturnNullIfCurrentIsNull()
+	{
+		$result = $this->multiplie->run(12, 0);
+
+		$this->assertEquals(0, $result);
+	}
+
 }
