@@ -5,5 +5,12 @@
  */
 interface Operation 
 {
+	/**
+	* Run the calcul
+	* 
+	* @param  int $num
+	* @param  int $current
+	* @return int
+	*/
 	public function run($num, $current);
 }

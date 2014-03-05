@@ -5,7 +5,7 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 {
 	/**
 	* In this test file we run our tests in total isolation. To perform that we mock
-	* every external classes called (these classes have their own test).
+	* every external classes called (because these classes have their own test).
 	*
 	* eg: Multiplication.php have tests in MultiplicationTest.php and here we mock
 	* Multiplication to stay isolated.
@@ -18,6 +18,7 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 	{
 		$this->calc = new Calculator;
 
+		// Mock all the outside objects
 		$this->additionMock = m::mock('Addition');
 		$this->substractionMock = m::mock('Substraction');
 		$this->multiplicationMock = m::mock('Multiplication');

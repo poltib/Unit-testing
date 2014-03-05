@@ -12,6 +12,7 @@
 >
     <testsuites>
         <testsuite name="Application Test Suite">
+            <!-- Path to tests directory -->
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
