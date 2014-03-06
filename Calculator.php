@@ -26,7 +26,7 @@ class Calculator
 	protected $operation;
 
 	/**
-     * Get the result of the operation
+     * Get the result of the operation.
      *
      * @return int
      */

@@ -6,7 +6,7 @@
 interface Operation 
 {
 	/**
-	* Run the calcul
+	* Run the calcul.
 	* 
 	* @param  int $num
 	* @param  int $current
