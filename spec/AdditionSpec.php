@@ -14,6 +14,6 @@ class AdditionSpec extends ObjectBehavior
 
     function it_add_number()
     {
-    	$this->run(5,0)->shouldBe(5);
+        $this->run(5,0)->shouldBe(5);
     }
 }

@@ -3,12 +3,12 @@
         "phpspec/phpspec": "2.0.*@dev"
     },
     "autoload": {
-    	"classmap": [
-    		"Calculator.php",
-    		"Operation.php",
-    		"Addition.php",
-    		"Substraction.php",
-    		"Multiplication.php"
-    	]
+        "classmap": [
+            "Calculator.php",
+            "Operation.php",
+            "Addition.php",
+            "Substraction.php",
+            "Multiplication.php"
+        ]
     }
 }

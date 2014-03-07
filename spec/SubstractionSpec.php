@@ -14,6 +14,6 @@ class SubstractionSpec extends ObjectBehavior
 
     function it_substract_number()
     {
-    	$this->run(5,0)->shouldBe(-5);
+        $this->run(5,0)->shouldBe(-5);
     }
 }
