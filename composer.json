@@ -4,12 +4,12 @@
         "mockery/mockery": "dev-master"
     },
     "autoload": {
-    	"classmap": [
-    		"Calculator.php",
-    		"Operation.php",
-    		"Addition.php",
-    		"Substraction.php",
-    		"Multiplication.php"
-    	]
+        "classmap": [
+            "Calculator.php",
+            "Operation.php",
+            "Addition.php",
+            "Substraction.php",
+            "Multiplication.php"
+        ]
     }
 }
