@@ -8,6 +8,16 @@ class Calculator
      * @var null
      */
     protected $result = null;
+
+    /**
+     * Set the result to the parameter
+     *
+     *  @param  int
+     */
+    public function setResult($num)
+    {
+        $this->result = $num;
+    }
     
     /**
      * Get the result of the operation

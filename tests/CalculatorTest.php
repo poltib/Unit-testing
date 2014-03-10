@@ -18,9 +18,10 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 
     public function testAddNumbers()
     {
+        $this->calc->setResult(5);
         $this->calc->add(5);
 
-        $this->assertEquals(5, $this->calc->getResult());
+        $this->assertEquals(10, $this->calc->getResult());
     }
 
     /**
