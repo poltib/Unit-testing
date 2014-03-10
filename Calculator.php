@@ -25,6 +25,11 @@ class Calculator
      */
     protected $operation;
 
+    public function setResult($num)
+    {
+        $this->result = $num;
+    }
+
     /**
      * Get the result of the operation
      *

@@ -438,12 +438,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/padraic/mockery.git",
-            "reference": "6a6fc18508e270cd5a5acaee7492e4e4a303fce6"
+            "reference": "a32c6ad986c061b40636b7da4fe30adc2a7451b5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/padraic/mockery/zipball/6a6fc18508e270cd5a5acaee7492e4e4a303fce6",
-            "reference": "6a6fc18508e270cd5a5acaee7492e4e4a303fce6",
+            "url": "https://api.github.com/repos/padraic/mockery/zipball/a32c6ad986c061b40636b7da4fe30adc2a7451b5",
+            "reference": "a32c6ad986c061b40636b7da4fe30adc2a7451b5",
             "shasum": ""
         },
         "require": {
@@ -455,7 +455,7 @@
             "phpunit/phpunit": "4.0.*",
             "satooshi/php-coveralls": "dev-master"
         },
-        "time": "2014-02-26 10:59:49",
+        "time": "2014-03-05 22:17:02",
         "type": "library",
         "extra": {
             "branch-alias": {

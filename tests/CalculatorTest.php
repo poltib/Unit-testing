@@ -31,17 +31,18 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 
     public function testAddNumbers()
     {
+        $this->calc->setResult(5);
         $this->additionMock
              ->shouldReceive('run')
              ->once()
-             ->with(5,0)
-             ->andReturn(5);
+             ->with(5,5)
+             ->andReturn(10);
 
         $this->calc->setOperands(5);
         $this->calc->setOperation($this->additionMock);
         $result = $this->calc->calculate();
 
-        $this->assertEquals(5, $result);
+        $this->assertEquals(10, $result);
     }
 
     /**
@@ -77,30 +78,33 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 
     public function testSubstract()
     {
+        $this->calc->setResult(5);
         $this->substractionMock
              ->shouldReceive('run')
              ->once()
-             ->with(4,0)
-             ->andReturn(-4);
+             ->with(4,5)
+             ->andReturn(-1);
 
         $this->calc->setOperands(4);
         $this->calc->setOperation($this->substractionMock);
         $result = $this->calc->calculate();
 
-        $this->assertEquals(-4, $result);
+        $this->assertEquals(-1, $result);
     }
 
-    public function testMultipliesNumbers()
+    public function testMultiply()
     {
+        $this->calc->setResult(5);
         $this->multiplicationMock
              ->shouldReceive('run')
-             ->times(3)
-             ->andReturn(24);
+             ->once()
+             ->with(4,5)
+             ->andReturn(20);
 
-        $this->calc->setOperands(3,4,2);
+        $this->calc->setOperands(4);
         $this->calc->setOperation($this->multiplicationMock);
         $result = $this->calc->calculate();
 
-        $this->assertEquals(24, $result);
+        $this->assertEquals(20, $result);
     }
 }
